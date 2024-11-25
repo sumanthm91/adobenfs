@@ -56,3 +56,16 @@
 .no-image.cards .cards-card-body p {
     color: #fff; /* White color for paragraph text */
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .cards > ul {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+}
+
+@media (min-width: 769px) {
+    .cards > ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
