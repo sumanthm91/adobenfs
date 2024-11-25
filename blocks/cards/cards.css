@@ -1,27 +1,58 @@
+.cards-wrapper {
+    margin: none !important;
+    padding: 30px !important;
+}
+
 .cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    grid-gap: 24px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+    border: 1px solid #dadada;
+    background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+    margin: 16px;
 }
 
 .cards .cards-card-image {
-  line-height: 0;
+    line-height: 0;
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+/* New Variation for red-theme class */
+.red-theme.cards .cards-card-image {
+    border: 20px solid red; /* Red frame around the image */
+}
+.red-theme.cards > ul > li {
+    border: none; /* Removed border */
+    text-align: center;
+}
+
+/* New Variation for no-image class */
+.no-image.cards > ul > li {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.no-image.cards .cards-card-body h2 {
+    font-size: 24px;
+    color: #fff; /* White color for headings */
+}
+
+.no-image.cards .cards-card-body p {
+    color: #fff; /* White color for paragraph text */
 }

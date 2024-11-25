@@ -1,0 +1,26 @@
+.banner-wrapper {
+    margin: none !important;
+    padding: 0 !important;
+}
+
+.banner {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.banner img {
+    height: 60px;
+}
+
+/* New Variation for red-bg class */
+.red-bg.banner {
+    background-color: red; /* Red background */
+    color: white; /* White text color */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+}

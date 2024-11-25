@@ -1,0 +1,80 @@
+.nfs-form-wrapper {
+    margin: none !important;
+    padding: 0 !important;
+}
+
+.nfs-form {
+    display: flex;
+    background-color: #ff0000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.nfs-form .left {
+    flex: 1;
+    padding: 0 20px;
+}
+.nfs-form .right {
+    flex: 1;
+    padding: 20px;
+}
+.nfs-form h2 {
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-family: "adobe_cleanbold";
+}
+.nfs-form p {
+    font-family: "adobe_cleanregular";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.nfs-form form {
+    display: flex;
+    flex-direction: column;
+}
+.nfs-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.nfs-form button {
+    padding: 15px;
+    background-color: #ff0000;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.nfs-form button:hover {
+    background-color: #ff3333;
+}
+.nfs-form .disclaimer {
+    font-family: "adobe_cleanregular";
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-top: 15px;
+}
+.nfs-form .disclaimer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.nfs-form label {
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-family: "adobe_cleanregular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    height: auto;
+    line-height: 15px;
+}
