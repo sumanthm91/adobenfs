@@ -78,3 +78,34 @@
     height: auto;
     line-height: 15px;
 }
+
+/* Mobile view styles */
+@media only screen and (max-width: 768px) {
+    .nfs-form {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .nfs-form .left,
+    .nfs-form .right {
+        flex: none;
+        padding: 10px 0;
+    }
+    .nfs-form h2 {
+        font-size: 32px;
+    }
+    .nfs-form p {
+        font-size: 20px;
+    }
+    .nfs-form input,
+    .nfs-form button {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .nfs-form button {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .nfs-form .disclaimer {
+        font-size: 10px;
+    }
+}
