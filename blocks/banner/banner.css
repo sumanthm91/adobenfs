@@ -24,3 +24,9 @@
     align-items: center;
     justify-content: center; /* Center the content horizontally */
 }
+
+@media (min-width: 1500px) {
+    .banner-wrapper {
+        width: 100% !important;
+    }
+}

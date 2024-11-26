@@ -109,3 +109,9 @@
         font-size: 10px;
     }
 }
+
+@media (min-width: 1500px) {
+    .nfs-form-wrapper {
+        width: 100% !important;
+    }
+}

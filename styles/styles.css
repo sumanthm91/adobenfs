@@ -94,3 +94,9 @@ a.button:hover {
         padding: 0 10px;
     }
 }
+
+@media (min-width: 1500px) {
+    main > .section > div {
+        width: 1200px;
+    }
+}
