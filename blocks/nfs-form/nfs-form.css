@@ -1,29 +1,28 @@
-.nfs-form-wrapper {
-    padding: 0 !important;
-    background-color: rgb(235, 16, 0);
+.nfs-form-container {
+    background-color: #eb1000;
 }
 
 .nfs-form {
     display: flex;
-
-    padding: 20px;
+    padding: 20px 0 20px 0;
     box-sizing: border-box;
-    width: 80%; /* Adjust the percentage as needed to reduce the width */
     margin: 0 auto;
+    padding-top: 50px;
+    gap: 130px;
 }
 .nfs-form .left {
     flex: 1;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
 }
 .nfs-form .right {
     flex: 1;
-    padding: 20px;
+    padding: 0 0 20px 0;
 }
 .nfs-form h2 {
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 255, 255);
-    font-size: 45px;
+    font-size: 40px;
     font-family: "adobe_cleanbold";
     line-height: 1.2;
 }
@@ -40,14 +39,14 @@
 }
 .nfs-form input {
     margin-bottom: 15px;
-    padding: 5px;
+    padding: 4px;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 .nfs-form button {
     padding: 10px;
-    background-color: #ff0000;
+    background-color: #eb1000;
     color: white;
     border: 2px solid white;
     border-radius: 25px;
@@ -86,7 +85,7 @@
 @media only screen and (max-width: 768px) {
     .nfs-form {
         flex-direction: column;
-        padding: 10px;
+        padding: 10px 0 10px 0;
     }
     .nfs-form .left,
     .nfs-form .right {
@@ -113,24 +112,6 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .nfs-form-wrapper {
-        width: 100% !important;
-    }
-}
-
-@media (min-width: 1200px) {
-    .nfs-form {
-        width: 85%;
-    }
-}
-
-@media (min-width: 1500px) {
-    .nfs-form {
-        width: 57%;
-    }
-}
-
 /* Styles for thank you message */
 .thank-you-message {
     display: none;
@@ -138,7 +119,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ff0000;
+    background-color: #eb1000;
     color: #fff;
     padding: 20px;
     border-radius: 10px;

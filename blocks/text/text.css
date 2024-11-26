@@ -9,15 +9,14 @@
 
 .text {
     margin: auto;
-    color: var(--text-color);
-    font-family: var(--body-font-family);
-    font-size: var(--body-font-size-m);
-    line-height: 1.6;
-    font-size: 14px;
 }
 
 .text p {
     margin-bottom: 20px;
+    font-family: "adobe_cleanregular";
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {

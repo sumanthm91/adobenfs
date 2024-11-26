@@ -1,10 +1,11 @@
-.agenda-wrapper {
+.agenda-container {
     background-image: url("https://d9hhrg4mnvzow.cloudfront.net/www.adobe-invite.com/dubai-need-for-speed/c2cade2a-dubai-min_11rv0zh1hc0zh059000028.png");
+}
 
+.agenda-wrapper {
     padding: 40px 0 40px !important;
     display: flex;
     justify-content: center;
-    background-position: center;
 }
 
 .agenda {
@@ -40,7 +41,7 @@
     font-style: normal;
     font-weight: 300;
     color: #fff;
-    width: 10%;
+    width: 15%;
 }
 
 .agenda .description {
@@ -53,6 +54,10 @@
     padding: 0 50px 0 0;
 }
 
+.agenda .description p {
+    margin-left: 0;
+}
+
 .agenda .details {
     font-family: "adobe_cleanregular";
     font-size: 12px;
@@ -60,11 +65,11 @@
     margin-top: 5px;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .agenda-wrapper {
         width: 100% !important;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .agenda-wrapper {
@@ -93,5 +98,11 @@
     }
     .agenda .agenda-title {
         font-size: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .agenda-container {
+        background-size: cover;
     }
 }

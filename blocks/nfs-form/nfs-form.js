@@ -64,7 +64,7 @@ export default function decorate(block) {
         </div>
   `;
 
-  const form = block.querySelector("#registrationForm");
+  const form = block.querySelector("#registrationform");
   const thankYouMessage = block.querySelector("#thankYouMessage");
   const closeThankYou = block.querySelector("#closeThankYou");
 

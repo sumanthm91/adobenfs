@@ -33,11 +33,31 @@
 
 /* New Variation for red-theme class */
 .red-theme.cards .cards-card-image {
-    border: 20px solid red; /* Red frame around the image */
+    border: 30px solid rgb(235, 16, 0); /* Red frame around the image */
 }
+
+.red-theme.cards .cards-card-image img {
+    height: 180px;
+}
+
 .red-theme.cards > ul > li {
     border: none; /* Removed border */
     text-align: center;
+}
+
+.red-theme.cards .cards-card-body p strong {
+    font-family: "adobe_cleanregular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.red-theme.cards .cards-card-body p {
+    font-family: "adobe_cleanregular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* New Variation for no-image class */
@@ -53,9 +73,16 @@
     color: #fff; /* White color for headings */
 }
 
+.no-image.cards .cards-card-body p strong {
+    color: #fff;
+    font-size: 13px;
+    font-family: "adobe_cleanregular";
+    font-weight: bold;
+}
+
 .no-image.cards .cards-card-body p {
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     font-family: "adobe_cleanregular";
     font-weight: 300;
 }

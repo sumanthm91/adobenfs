@@ -1,35 +1,28 @@
-.banner-wrapper {
-    margin: none !important;
-    padding: 0 !important;
+.banner-container {
+    background: black;
 }
 
 .banner {
-    background: black;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 14px;
 }
 
 .banner img {
     height: 40px;
-    padding: 0 175px 0 0;
 }
 
 /* New Variation for red-bg class */
 .red-bg.banner {
-    background-color: red; /* Red background */
+    background-color: #eb1000; /* Red background */
     color: white; /* White text color */
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center; /* Center the content horizontally */
-}
-
-@media (min-width: 1200px) {
-    .banner-wrapper {
-        width: 100% !important;
-    }
+    width: 100%;
+    margin-top: 50px;
 }
 
 @media (max-width: 768px) {
