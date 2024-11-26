@@ -1,0 +1,96 @@
+.agenda-wrapper {
+    background-image: url("https://d9hhrg4mnvzow.cloudfront.net/www.adobe-invite.com/dubai-need-for-speed/c2cade2a-dubai-min_11rv0zh1hc0zh059000028.png");
+
+    padding: 40px 0 40px !important;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+}
+
+.agenda {
+    padding: 20px 400px 20px 20px;
+    width: 500px;
+    border: 40px solid transparent;
+    border-image: url("https://d9hhrg4mnvzow.cloudfront.net/www.adobe-invite.com/dubai-need-for-speed/996c327d-adobe-lense_10xc0vx000000000000028.png")
+        50 round;
+}
+
+.agenda .agenda-title {
+    font-family: "adobe_cleanbold";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+}
+
+.agenda table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.agenda td {
+    padding: 0 0 10px 0;
+    vertical-align: top;
+}
+
+.agenda .time {
+    font-family: "adobe_cleanregular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+    width: 10%;
+}
+
+.agenda .description {
+    font-family: "adobe_cleanregular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    color: #fff;
+    width: 60%;
+    padding: 0 50px 0 0;
+}
+
+.agenda .details {
+    font-family: "adobe_cleanregular";
+    font-size: 12px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+@media (min-width: 1500px) {
+    .agenda-wrapper {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .agenda-wrapper {
+        background-color: black;
+        background-image: none; /* Remove background image */
+        padding: 40px 0 40px !important;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+    }
+
+    .agenda {
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+        border: none; /* Remove border and border-image */
+    }
+
+    .agenda .time {
+        width: 20%;
+        font-size: 14px;
+    }
+
+    .agenda .description {
+        padding: 0 10px 0 0;
+        font-size: 14px;
+    }
+    .agenda .agenda-title {
+        font-size: 32px;
+    }
+}

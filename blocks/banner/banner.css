@@ -13,6 +13,7 @@
 
 .banner img {
     height: 60px;
+    padding: 0 75px 0 0;
 }
 
 /* New Variation for red-bg class */
@@ -28,5 +29,11 @@
 @media (min-width: 1500px) {
     .banner-wrapper {
         width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner img {
+        padding: 0;
     }
 }

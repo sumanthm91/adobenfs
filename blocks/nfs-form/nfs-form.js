@@ -27,7 +27,7 @@ export default function decorate(block) {
             <p>${data.description}</p>
         </div>
         <div class="right">
-           <form id="registrationForm" action="/fsg?pageId=a6c6de63-6aff-4cec-936d-03a36835fafe&variant=f" method="POST">
+           <form id="registrationform" action="/fsg?pageId=a6c6de63-6aff-4cec-936d-03a36835fafe&variant=f" method="POST">
            <input type="hidden" name="pageId" value="a6c6de63-6aff-4cec-936d-03a36835fafe">
            <input type="hidden" name="pageVariant" value="f">
            ${data.fields
@@ -51,6 +51,44 @@ export default function decorate(block) {
             <div class="disclaimer">
                 By supplying my mobile number, I authorize the <a href="#">Adobe family of companies</a> to contact me with personalized communications about Adobe's products and services. See our <a href="#">privacy policy</a> for more details or to opt out at any time.
             </div>
+            <div id="thankYouMessage" class="thank-you-message">
+              <div class="thank-you-content">
+                <div class="thank-you-header">
+                  <img src="https://d9hhrg4mnvzow.cloudfront.net/www.adobe-invite.com/dubai-need-for-speed/81596698-adobe.svg" alt="Adobe Logo">
+                </div>
+                <h3>Thank you!</h3>
+                <p>We look forward to seeing you in January.</p>
+                <button id="closeThankYou">×</button>
+              </div>
+            </div>
         </div>
   `;
+
+  const form = block.querySelector("#registrationForm");
+  const thankYouMessage = block.querySelector("#thankYouMessage");
+  const closeThankYou = block.querySelector("#closeThankYou");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    // Simulate form submission
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+      });
+      if (response.ok) {
+        // Handle successful response
+      } else {
+        // Handle error response
+      }
+    } catch (error) {
+      // Handle network error
+    } finally {
+      thankYouMessage.style.display = "block";
+    }
+  });
+
+  closeThankYou.addEventListener("click", () => {
+    thankYouMessage.style.display = "none";
+  });
 }
