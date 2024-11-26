@@ -17,10 +17,11 @@
 
 .agenda .agenda-title {
     font-family: "adobe_cleanbold";
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 300;
     color: #fff;
+    margin: 20px 0 20px 0;
 }
 
 .agenda table {
@@ -59,7 +60,7 @@
     margin-top: 5px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
     .agenda-wrapper {
         width: 100% !important;
     }

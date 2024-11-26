@@ -1,3 +1,7 @@
+.columns {
+    margin-top: 50px;
+}
+
 .columns > div {
     display: flex;
     flex-direction: column;

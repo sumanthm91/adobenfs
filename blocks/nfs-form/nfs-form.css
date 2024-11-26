@@ -1,12 +1,15 @@
 .nfs-form-wrapper {
     padding: 0 !important;
+    background-color: rgb(235, 16, 0);
 }
 
 .nfs-form {
     display: flex;
-    background-color: #ff0000;
+
     padding: 20px;
     box-sizing: border-box;
+    width: 80%; /* Adjust the percentage as needed to reduce the width */
+    margin: 0 auto;
 }
 .nfs-form .left {
     flex: 1;
@@ -20,12 +23,13 @@
     font-weight: 300;
     font-style: normal;
     color: rgb(255, 255, 255);
-    font-size: 48px;
+    font-size: 45px;
     font-family: "adobe_cleanbold";
+    line-height: 1.2;
 }
 .nfs-form p {
     font-family: "adobe_cleanregular";
-    font-size: 26px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     color: rgb(255, 255, 255);
@@ -36,13 +40,13 @@
 }
 .nfs-form input {
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 5px;
     font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 .nfs-form button {
-    padding: 15px;
+    padding: 10px;
     background-color: #ff0000;
     color: white;
     border: 2px solid white;
@@ -109,9 +113,21 @@
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
     .nfs-form-wrapper {
         width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nfs-form {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .nfs-form {
+        width: 57%;
     }
 }
 

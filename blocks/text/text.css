@@ -1,7 +1,10 @@
+.text-container {
+    background-color: #d3d3d333; /* Changed to a much lighter grey */
+}
+
 .text-wrapper {
     margin: none !important;
     padding: 30px !important;
-    background-color: #d3d3d333; /* Changed to a much lighter grey */
 }
 
 .text {
