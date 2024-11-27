@@ -1,5 +1,6 @@
 .agenda-container {
     background-image: url("https://d9hhrg4mnvzow.cloudfront.net/www.adobe-invite.com/dubai-need-for-speed/c2cade2a-dubai-min_11rv0zh1hc0zh059000028.png");
+    background-size: 108%;
 }
 
 .agenda-wrapper {
@@ -103,6 +104,7 @@
 
 @media (min-width: 1200px) {
     .agenda-container {
-        background-size: 108%;
+        background-size: 116%;
+        background-position: 50% 0;
     }
 }
